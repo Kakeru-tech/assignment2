@@ -23,12 +23,12 @@ public class RetrofitServices {
 
     // private constructor restricted to this class itself
     private RetrofitServices() {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.4:5000/api/")//
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl("http://192.168.1.4:5000/api/")//
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
 
-        remotePhonebookDb = retrofit.create(RemotePhonebookDb.class);
+            remotePhonebookDb = retrofit.create(RemotePhonebookDb.class);
 
     }
 
